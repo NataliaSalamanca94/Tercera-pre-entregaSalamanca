@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro Clientes</title>
+</head>
+<body>
+    <h1>Formulario Registro Clientes</h1>
+    
+    <form method="POST" action="">
+        {% csrf_token %}
+        
+        
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+     
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        
+        <!-- Campo de selección -->
+        <label for="tipo_documento">Tipo de Documento:</label>
+        <select id="tipo_documento" name="tipo_documento" required>
+            <option value="1">Cédula</option>
+            <option value="2">Pasaporte</option>
+        </select>
+
+        <label for="numero_documento">Número de documento:</label>
+        <input type="text" id="numero_documento" name="numero_documento" required>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        
+    
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

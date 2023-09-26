@@ -1,0 +1,7 @@
+Mi tienda Virtual
+
+Inicio ---> Pagina de inicio
+Crear Cliente ----> Crea un registro de cliente
+Crear Artículo ---> Crea un registro de Artículo
+Crear Tienda ---> Crea un registro de Tienda
+Consultar Base de Datos ---> Muestra lo registrado en la base.

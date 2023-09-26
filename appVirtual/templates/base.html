@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mi Tienda Virtual{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Tienda Virtual</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'inicio' %}">Inicio</a></li>
+                <li><a href="{% url 'crear_cliente' %}">Crear Cliente</a></li>
+                <li><a href="{% url 'crear_articulo' %}">Crear Artículo</a></li>
+                <li><a href="{% url 'crear_tienda' %}">Crear Tienda</a></li>
+                <li><a href="{% url 'consultar_base_datos' %}">Consultar Base de Datos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        &copy; 2023 Mi Tienda Virtual
+    </footer>
+</body>
+</html>

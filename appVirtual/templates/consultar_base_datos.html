@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Consultar Base de Datos</h2>
+
+    <h3>Clientes:</h3>
+    <ul>
+        {% for cliente in clientes %}
+            <li>{{ cliente.nombre }} {{ cliente.apellido }} - {{ cliente.tipo_documento }}: {{ cliente.numero_documento }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Artículos:</h3>
+    <ul>
+        {% for articulo in articulos %}
+            <li>{{ articulo.nombre }} - Precio: {{ articulo.precio }} - SKU: {{ articulo.sku }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Tiendas:</h3>
+    <ul>
+        {% for tienda in tiendas %}
+            <li>{{ tienda.nombre }} - Teléfono: {{ tienda.telefono }} - Dirección: {{ tienda.direccion }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
